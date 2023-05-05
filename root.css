@@ -1,0 +1,15 @@
+:root {
+  font-size: 10px;
+
+  --text-small: 1.2rem;
+  --text-normal: 1.6rem;
+  --text-medium: 2.0rem;
+  --text-large: 2.4rem;
+  --text-huge: 3.2rem;
+
+  --light: rgb(209, 209, 209);
+  --light-hover: rgb(255, 255, 255);
+  --dark: rgb(68, 68, 68);
+  --dark-hover: rgb(8, 8, 8);
+  --dark-opacity: rgba(0, 0, 0, 0.151);
+}

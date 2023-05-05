@@ -1,0 +1,15 @@
+.navigation-menu .list {
+  display: flex;
+  gap: 16px;
+}
+.navigation-menu .list .item {
+  padding: 8px 16px;
+}
+.navigation-menu .list .item .link {
+  color: var(--light);
+  font-size: var(--text-medium);
+  font-weight: bold;
+}
+.navigation-menu .list .item .link:hover {
+  color: var(--light-hover);
+}

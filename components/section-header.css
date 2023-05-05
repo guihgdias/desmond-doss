@@ -1,0 +1,21 @@
+.section-header {
+  width: 100%;
+  margin-bottom: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-header::after {
+  content: '';
+  display: block;
+  width: 120px;
+  height: 4px;
+  background: var(--light);
+  margin-top: 8px;
+  border-radius: 4px;
+}
+.section-header .title {
+  color: var(--light);
+  font-size: var(--text-huge);
+  text-align: center;
+}

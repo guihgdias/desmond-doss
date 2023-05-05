@@ -1,0 +1,45 @@
+main {
+  width: 100%;
+  min-height: calc(100vh - 160px);
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  background-color: var(--dark-hover);
+}
+
+.main-description {
+  color: var(--light);
+  font-size: var(--text-normal);
+  word-wrap: break-word;
+  line-height: 2rem;
+  margin-bottom: 20px;
+}
+
+.container {
+  padding: 64px 16px;
+  max-width: 900px;
+}
+
+.main-logo {
+  font-size: var(--text-huge);
+  font-weight: bolder;
+  color: var(--light);
+}
+
+#hero-section {
+
+}
+#hero-section .attatchment {
+  float: left;
+  margin: 0 16px 16px 0
+}
+#hero-section .attatchment .picture {
+  max-width: 200px;
+  border-radius: 8px;
+}
+#hero-section .attatchment .caption {
+  color: var(--light);
+  font-size: var(--text-small);
+}
