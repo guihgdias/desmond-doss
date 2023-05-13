@@ -2,11 +2,17 @@ main {
   width: 100%;
   min-height: calc(100vh - 160px);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 body {
   background-color: var(--dark-hover);
+}
+
+section {
+  min-height: calc(100vh - 80px);
+  width: 100%;
 }
 
 .main-description {
@@ -20,6 +26,7 @@ body {
 .container {
   padding: 64px 16px;
   max-width: 900px;
+  margin: auto;
 }
 
 .main-logo {
@@ -29,17 +36,45 @@ body {
 }
 
 #hero-section {
-
+  height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
 }
-#hero-section .attatchment {
+.attatchment {
   float: left;
   margin: 0 16px 16px 0
 }
-#hero-section .attatchment .picture {
+.attatchment.right {
+  float: right;
+  margin: 0 0 16px 16px;
+}
+.attatchment .picture {
   max-width: 200px;
   border-radius: 8px;
 }
-#hero-section .attatchment .caption {
+.attatchment .caption {
   color: var(--light);
   font-size: var(--text-small);
+}
+
+#funeral-section {
+  height: fit-content;
+  min-height: 500px;
+}
+
+#gallery-section {
+  background-color: var(--dark);
+}
+#gallery-section .grid {
+  grid-gap: 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+#gallery-section .grid .imgArea {
+  height: 400px;
+}
+#gallery-section .grid .imgArea img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
